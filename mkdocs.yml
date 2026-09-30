@@ -1,0 +1,65 @@
+site_name: Test Cloud w SAP
+site_description: UiPath Software Testing Training
+docs_dir: docs
+theme:
+  name: material
+  logo: assets/images/partner-success-logo-header.png
+  palette:
+    - scheme: light
+      primary: blue
+      accent: blue
+    - scheme: dark
+      primary: blue
+      accent: blue
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - toc.integrate
+
+extra:
+  generator: false
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/mermaid.min.js
+  - assets/js/mermaid-init.js
+  - assets/js/sidebar-toggle.js
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - tables
+
+nav:
+  - Home: index.md
+  - Training Roadmap: training/index.md
+  - UiPath Test Cloud: training/00-uipath-test-cloud.md
+  - Getting Started with Test Manager: training/01-getting-started-test-manager.md
+  - Agentic Testing: training/02-agentic-testing.md
+  - Getting Started in Studio: training/03-getting-started-studio.md
+  - Object Repository: training/04-object-repository.md
+  - Connect Project to Test Manager: training/06-connect-project-to-test-manager.md
+  - Manual to Automated Test Case: training/07-manual-to-automated-test-case.md
+  - Data-Driven Testing: training/08-data-driven-testing.md
+  - Orchestrator: training/09-orchestrator.md
+  - Publishing Test Cases: training/10-publishing-test-cases.md
+  - Execute Test Cases: training/11-execute-test-cases.md
+  - You Did It!: training/you-did-it.md

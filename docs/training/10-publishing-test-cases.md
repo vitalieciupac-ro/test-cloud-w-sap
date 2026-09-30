@@ -1,0 +1,51 @@
+# Publishing Test Cases
+
+To publish test cases created in Studio, you must set them as **publishable**, because both test cases and data-driven test cases are created as drafts by default.
+
+!!! example "Guided walkthrough"
+    **Business case:** Imagine you're a Test Automation Engineer on an SAP team. You've created a test case that displays purchase orders in transaction ME23N and checks the account assignment and location of Line Item 1 for different POs. Now you want to link it to Test Manager, publish it to Orchestrator, and upload the results directly to Test Manager.
+
+    Before you start, make sure you have:
+
+    ✅ Access to your SAP system through SAP GUI for Windows.
+
+    ✅ Access to Orchestrator and Test Manager in Automation Cloud.
+
+    ✅ The Assistant connected to your Orchestrator instance.
+
+    If you haven't already, go back and complete the data-driven test case guided practice first.
+
+    ### Step 1 — Set your test case as publishable
+
+    Select the test case, right-click, and choose **Set as publishable**.
+
+    ![Set as Publishable](../assets/images/Studio%20Set%20As%20Publishable.png)
+
+    !!! note
+        You can select multiple test cases and set them as publishable at once.
+
+    ### Step 2 — Publish the test case
+
+    Publish the test case to Orchestrator by clicking **Publish** on the ribbon.
+
+    ![Publish Button](../assets/images/Studio%20Publish%20button.jpg)
+
+    ### Step 3 — Confirm the publish
+
+    Add the project name and the version you'd like to publish as.
+
+    ![Publish Test Case Window](../assets/images/Studio%20Publish%20TC%20Window.png)
+
+    ### Nice work!
+
+    You've successfully published the test case to Orchestrator.
+
+!!! warning "Before you publish"
+    Make sure your Robot or Assistant is connected — publishing to Orchestrator requires it.
+
+---
+
+[Next → Execute Test Cases](11-execute-test-cases.md){: .md-button .md-button--primary}
+
+---
+
